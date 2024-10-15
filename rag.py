@@ -33,7 +33,7 @@ app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100 MB
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Retrieve Groq API Key from environment variables for security
-groq_api_key = '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'
+groq_api_key = 'YOUR API KEY'
 
 class RAGSystem:
     def __init__(self, model_name='all-MiniLM-L6-v2', llm_model='llama-3.1-8b-instant'):
@@ -50,7 +50,7 @@ class RAGSystem:
         )
         self.embeddings_file = 'embeddings.pkl'
         self.transcription_client = OpenAI(
-            api_key='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',
+            api_key='YOUR API KEY',
             base_url="https://api.groq.com/openai/v1"
         )
 
